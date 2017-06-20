@@ -14,16 +14,26 @@
     <EditText
         style="@style/inputs"
         android:hint="@string/numero1"
-        android:id="@+id/numero1"/>
+        android:inputType="number"
+        android:id="@+id/valor1"/>
 
     <EditText
         style="@style/inputs"
         android:hint="@string/numero2"
-        android:id="@+id/numero2"/>
+        android:inputType="number"
+        android:id="@+id/valor2"/>
 
     <Button
         style="@style/button"
         android:text="@string/btnAcao"
         android:id="@+id/btnSomar"
+        android:onClick="soma"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/result"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
 </LinearLayout>
